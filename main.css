@@ -9,7 +9,7 @@ body{
 .container{
     display: grid;
     
-    grid-template-columns: repeat(10, 10%);
+    grid-template-columns: repeat(12, auto);
     grid-template-rows: auto;
 
 }
@@ -23,8 +23,8 @@ body{
 
 .heading{
     grid-row: 2;
-    grid-column: 4/-1;
-    padding: 0 60px 0 0;
+    grid-column: 5/-1;
+    padding: 0 60px 0 40px;
 }
 
 .toc{
@@ -34,14 +34,14 @@ body{
 }
 
 .post{
-    grid-column: 4/8;
-    padding-bottom: 5rem;
+    grid-column: 5/10;
     grid-row: 3;
+    padding: 0 0 60px 40px;
 }
 
 .meta-data{
-    padding: 0 60px 0 120px;
-    grid-column: 8/-1;
+    padding: 0 60px 0 50px;
+    grid-column: 10/-1;
     grid-row: 3;
 }
 
