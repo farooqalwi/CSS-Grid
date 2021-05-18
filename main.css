@@ -8,8 +8,8 @@ body{
 
 .container{
     display: grid;
-    
-    grid-template-columns: repeat(12, auto);
+    width: 100%;
+    grid-template-columns: repeat(10, 10%);
     grid-template-rows: auto;
 
 }
@@ -23,8 +23,8 @@ body{
 
 .heading{
     grid-row: 2;
-    grid-column: 5/-1;
-    padding: 0 60px 0 40px;
+    grid-column: 2/-1;
+    padding: 0 60px 0 0;
 }
 
 .toc{
@@ -33,16 +33,23 @@ body{
     grid-row: 3;
 }
 
-.post{
-    grid-column: 5/10;
+.about{
+    grid-column: 2/7;
     grid-row: 3;
-    padding: 0 0 60px 40px;
+    padding: 0 0 0 0;
 }
 
-.meta-data{
-    padding: 0 60px 0 50px;
-    grid-column: 10/-1;
+.projects{
+    grid-column: 7/-1;
     grid-row: 3;
+    padding: 0 60px 0 50px;
+    
+}
+
+.recent-posts{
+    grid-column: 2/-1;
+    padding: 0 60px 50px 0;
+    grid-row: 4;
 }
 
 .footer{
