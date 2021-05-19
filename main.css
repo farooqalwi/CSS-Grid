@@ -59,6 +59,8 @@ footer{
 .recent-posts{
     grid-column: 1/-1;
     grid-row: 3;
+    margin: 0 0 60px 0;
+    padding: 0;
 }
 
 .article{
