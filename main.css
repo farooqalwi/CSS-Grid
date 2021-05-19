@@ -1,14 +1,13 @@
 body{
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: auto;
     position: relative;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
     background-color: whitesmoke;
-
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(10, 10%);
-    grid-template-rows: auto;
 }
 
 header{
@@ -27,6 +26,7 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
 
 .home-heading{
     grid-row: 2;
@@ -53,25 +53,19 @@ footer{
     grid-row: 4;
 }
 
-.article-heading{
-    grid-row: 2;
-    grid-column: 4/-1;
-    padding: 0 60px 0 0;
-}
-
 .toc{
-    grid-row: 3;
+    grid-row: 2;
     padding: 0 0 0 60px;
     grid-column: 1/4;
 }
 
 .post{
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 4/8;
 }
 
 .meta-data{
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 8/-1;
     padding: 0 60px 0 60px;
 }
